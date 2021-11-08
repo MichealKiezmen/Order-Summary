@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  background: url("../images/pattern-background-mobile.svg") no-repeat center
+    center/cover;
+  text-align: center;
+}
+
+/* FONTS */
+
+@font-face {
+  src: url("../Red_Hat_Display/static/RedHatDisplay-Light.ttf");
+  font-family: pact;
+}
+
+@font-face {
+  src: url("../Red_Hat_Display/static/RedHatDisplay-Black.ttf");
+  font-family: pac;
+}
+
+/*              GLOBAL STYLING           */
+h3 {
+  font-family: pac;
+  font-size: 18px;
+}
+
+p {
+  font-family: pact;
+  font-size: 14px;
+}
+
+.order-box {
+  text-align: center;
+  background-color: #ffffff;
+  margin: 30px auto;
+  width: 85%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+/*          PAGE CONTENT SECTION             */
+.main-text {
+  padding: 0 30px;
+}
+
+.illustration-hero-img {
+  padding-bottom: 20px;
+}
+.illustration-hero-img img {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+
+/*              SUBSCRIPTION PLAN                    */
+.subscription {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.subscription div {
+  margin: 15px 10px;
+  padding: 5px 10px;
+}
+.subscription div:first-child img {
+  float: left;
+  height: 40px;
+}
+
+.subscription div:first-child p,
+.subscription div:first-child h3 {
+  display: inline;
+  font-size: 14px;
+}
+
+.subscription div:last-child a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  position: relative;
+  top: 10px;
+}
+
+
+
+/*                          PAYMENT AND ORDERS               */
+
+.buttons a {
+  text-decoration: none;
+  padding: 8px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-family: pac;
+  font-size: 10px;
+}
+
+.buttons a:first-child,
+.order-box {
+  box-shadow: 0 10px 10px hsl(225, 100%, 94%);
+}
+
+.buttons a:last-child {
+  background-color: white;
+  color: black;
+}
+
+.buttons a:hover,
+.subscription div:last-child a:hover {
+  opacity: 0.7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/*          DESKTOP VIEW                     */
+
+@media all and (min-width: 700px) {
+  .order-box {
+    width: 25%;
+  }
+  .main-text {
+    padding: 10px 40px;
+  }
+  body {
+    background: url("../images/pattern-background-desktop.svg") no-repeat center
+      center/cover;
+    text-align: center;
+  }
+}
